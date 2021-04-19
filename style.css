@@ -27,11 +27,29 @@ h1 {
 img {
   width: 100px;
 }
-
+.bee:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-2deg); }
+  20% { transform: rotate(2deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(-2deg); }
+  80% { transform: rotate(2deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-2deg); }
+}
 
 .footer {
   position: absolute;
-  bottom: 2px;
+  bottom: 10px;
   left: 0;
   right: 0;
   text-align: center;
